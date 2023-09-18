@@ -5,6 +5,11 @@ using UnityEngine;
 public class SpaceshipController : MonoBehaviour
 {
     public float movementSpeed = 5.0f;
+    public Rigidbody2D rb;
+    public Bullet bullet; 
+
+    // Vector2 moveDirection;
+    // Vector2 mousePosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +27,9 @@ public class SpaceshipController : MonoBehaviour
 
         // Move the spaceship
         transform.Translate(movement);
+
+        // if(Input.GetMouseButtonDown(0)){
+        //     bullet.Fire();
+        // }
     }
 }
