@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BulletScript : MonoBehaviour
 {	
     public float speed = 10f;
-    public GoalScript goalScript;
     // Start is called before the first frame update
     void Start()
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GoalScript : MonoBehaviour
+public class Goal : MonoBehaviour
 {  
     public Text goalText;
     List<string> planetNames = new List<string>{

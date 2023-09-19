@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5255423289544090341}
   - component: {fileID: 1466341584559102524}
-  - component: {fileID: 5976949285476898733}
   - component: {fileID: 2569444300103811856}
+  - component: {fileID: -8131073819464975132}
   m_Layer: 0
   m_Name: PlayerBullet
   m_TagString: PlayerBullet
@@ -86,20 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5976949285476898733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4872698104897336525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f4e45b3b5d4c4774b1ef92667d803be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  goalScript: {fileID: 0}
 --- !u!61 &2569444300103811856
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -126,3 +112,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0872269, y: 4.3499527}
   m_EdgeRadius: 0
+--- !u!114 &-8131073819464975132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4872698104897336525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f4e45b3b5d4c4774b1ef92667d803be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  goalScript: {fileID: 0}
