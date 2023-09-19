@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5749214362769462285}
   - component: {fileID: 2342922201890279351}
   m_Layer: 0
-  m_Name: D
+  m_Name: J
   m_TagString: Alphabet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2413b778e5b0542438f90ecd0a3e08a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5dd9340f1b7d446779859ab034e4ed88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
