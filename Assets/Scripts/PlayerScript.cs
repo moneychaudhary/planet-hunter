@@ -15,27 +15,27 @@ public class PlayerScript : MonoBehaviour
 
     void Start()
     {
-        FindBounderies();
+        FindBoundaries();
     }
 
-    void FindBounderies(){
+    void FindBoundaries(){
         Camera camera = Camera.main;
         minX = camera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + xPadding;
-	maxX = camera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - xPadding;
-	minY = camera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + yPadding;
-	maxY = camera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - yPadding;
+        maxX = camera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - xPadding;
+        minY = camera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + yPadding;
+        maxY = camera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - yPadding;
     }
 
     // Update is called once per frame
     void Update()
     {
-	float deltaX = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
-	float deltaY = Input.GetAxis("Vertical") * Time.deltaTime * speed;
+        float deltaX = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
+        float deltaY = Input.GetAxis("Vertical") * Time.deltaTime * speed;
 
-	float newX = Mathf.Clamp(transform.position.x + deltaX, minX, maxX);
+        float newX = Mathf.Clamp(transform.position.x + deltaX, minX, maxX);
         float newY = Mathf.Clamp(transform.position.y + deltaY, minY, maxY);
-  
-	transform.position = new Vector2(newX, newY);  
+
+        transform.position = new Vector2(newX, newY);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

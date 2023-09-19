@@ -525,8 +525,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -634807253
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8cd8cdb06fa5a4473a5f1cc352f7c9a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -641,7 +641,7 @@ GameObject:
   - component: {fileID: 1166143267}
   - component: {fileID: 1166143266}
   - component: {fileID: 1166143265}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -808,7 +808,7 @@ GameObject:
   - component: {fileID: 1744297756}
   - component: {fileID: 1744297755}
   - component: {fileID: 1744297757}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour
 {	
     public float speed = 10f;
+    public GoalScript goalScript;
     // Start is called before the first frame update
     void Start()
     {

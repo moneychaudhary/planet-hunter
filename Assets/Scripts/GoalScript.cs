@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Goal : MonoBehaviour
+public class GoalScript : MonoBehaviour
 {  
     public Text goalText;
     List<string> planetNames = new List<string>{
@@ -34,7 +34,6 @@ public class Goal : MonoBehaviour
      int randomIndex = Random.Range(0, planetNames.Count);
      currentGoal = planetNames[randomIndex];
      planetNames.RemoveAt(randomIndex);
-     Debug.Log(currentGoal);
     }
 
     void Shot(string alphabet) {

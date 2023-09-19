@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class SpawnerScript : MonoBehaviour
 {
     public GameObject [] alphabets;
     public float respawnTime = 0.5f;
@@ -20,11 +20,10 @@ public class Spawner : MonoBehaviour
 
     IEnumerator AlphabetSpawner() 
     { 
-	while(true) {
-		yield return new WaitForSeconds(respawnTime);
- 		SpawnAlphabet();
+        while(true) {
+            yield return new WaitForSeconds(respawnTime);
+            SpawnAlphabet();
         }
-      	
     }
    
     void SpawnAlphabet() 
