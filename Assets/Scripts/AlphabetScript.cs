@@ -5,7 +5,7 @@ using UnityEngine;
 public class AlphabetScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float speed = 50f;
+    public float speed = 5f;
     void Start()
     {
         
