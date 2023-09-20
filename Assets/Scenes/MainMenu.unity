@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 178250332}
   - component: {fileID: 178250331}
   - component: {fileID: 178250330}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,8 +278,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178250328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1022, y: 0.0994, z: 0}
-  m_LocalScale: {x: 9.175319, y: 19.454716, z: 1}
+  m_LocalPosition: {x: 0.0948, y: 0.2254, z: 0}
+  m_LocalScale: {x: 9.1128, y: 19.204664, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 393177433}
   - component: {fileID: 393177432}
   - component: {fileID: 393177431}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,8 +406,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.68, y: 34}
-  m_SizeDelta: {x: 109.04, y: 36.88}
+  m_AnchoredPosition: {x: 0, y: 20}
+  m_SizeDelta: {x: 140, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &393177431
 MonoBehaviour:
@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 419057170}
   - component: {fileID: 419057169}
   - component: {fileID: 419057168}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,8 +540,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -15}
-  m_SizeDelta: {x: 109.04, y: 36.88}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: 140, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &419057168
 MonoBehaviour:
@@ -648,7 +648,7 @@ GameObject:
   - component: {fileID: 1028901490}
   - component: {fileID: 1028901492}
   - component: {fileID: 1028901491}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ExitButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -662,7 +662,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028901489}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -670,10 +670,10 @@ RectTransform:
   m_Father: {fileID: 419057167}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3, y: -12}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1028901491
 MonoBehaviour:
@@ -697,18 +697,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Exit
+  m_Text: 'EXIT
 
 '
 --- !u!222 &1028901492
@@ -730,7 +730,7 @@ GameObject:
   - component: {fileID: 1131277414}
   - component: {fileID: 1131277416}
   - component: {fileID: 1131277415}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: LabelText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -754,8 +754,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 110.5}
-  m_SizeDelta: {x: 0, y: 300}
+  m_AnchoredPosition: {x: 7.8899994, y: 108.68}
+  m_SizeDelta: {x: 15.78, y: 303.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1131277415
 MonoBehaviour:
@@ -779,11 +779,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -811,7 +811,7 @@ GameObject:
   - component: {fileID: 1166143267}
   - component: {fileID: 1166143266}
   - component: {fileID: 1166143265}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -911,7 +911,7 @@ GameObject:
   - component: {fileID: 1219051423}
   - component: {fileID: 1219051425}
   - component: {fileID: 1219051424}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: StartText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -960,7 +960,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -994,7 +994,7 @@ GameObject:
   - component: {fileID: 1911801427}
   - component: {fileID: 1911801426}
   - component: {fileID: 1911801425}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: StartPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1021,8 +1021,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000047684, y: 0.0000085831}
-  m_SizeDelta: {x: 234, y: 521}
+  m_AnchoredPosition: {x: 0.0000039915, y: 0.000010014}
+  m_SizeDelta: {x: 245, y: 544}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1911801425
 MonoBehaviour:
