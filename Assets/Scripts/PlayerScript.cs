@@ -47,4 +47,9 @@ public class PlayerScript : MonoBehaviour
         gameController.GameOver();
       }
     }
-}
+
+    public void GameCompleted() {
+        gameController.GameCompleted();
+        Destroy(gameObject);
+    }
+ }

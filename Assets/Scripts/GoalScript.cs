@@ -7,6 +7,7 @@ public class GoalScript : MonoBehaviour
 {  
     public Text goalText;
     public Text remainingText;
+    public PlayerScript playerScript;
     List<string> planetNames = new List<string>{
     "EARTH",
     "MARS",
@@ -37,7 +38,8 @@ public class GoalScript : MonoBehaviour
     void SetGoal()
     {
          if (planetNames.Count == 0) {
-            // Game Finished
+            playerScript.GameCompleted();
+            return;
          }
          int randomIndex = Random.Range(0, planetNames.Count);
          currentGoal = planetNames[randomIndex];
