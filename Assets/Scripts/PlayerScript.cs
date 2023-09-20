@@ -43,6 +43,7 @@ public class PlayerScript : MonoBehaviour
       if(collision.tag == "Alphabet")
       {
         Destroy(gameObject);
+        // Game Ends
       }
     }
 }

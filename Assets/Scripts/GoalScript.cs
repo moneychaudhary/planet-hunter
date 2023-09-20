@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GoalScript : MonoBehaviour
 {  
     public Text goalText;
+    public Text remainingText;
     List<string> planetNames = new List<string>{
     "EARTH",
     "MARS",
@@ -17,6 +18,7 @@ public class GoalScript : MonoBehaviour
 //    "VENUS",
     };
     string currentGoal;
+    string remainingGoal;
     string[] killedAlphabets;
     Dictionary<char, int> goalWordCount = new Dictionary<char, int>();
     // Start is called before the first frame update
@@ -29,12 +31,17 @@ public class GoalScript : MonoBehaviour
     void Update()
     { 
       goalText.text = currentGoal;
+      remainingText.text = remainingGoal;
     }
      
     void SetGoal()
     {
+         if (planetNames.Count == 0) {
+            // Game Finished
+         }
          int randomIndex = Random.Range(0, planetNames.Count);
          currentGoal = planetNames[randomIndex];
+         remainingGoal = currentGoal;
          planetNames.RemoveAt(randomIndex);
          foreach (char letter in currentGoal){
             if (goalWordCount.ContainsKey(letter)){
@@ -54,7 +61,11 @@ public class GoalScript : MonoBehaviour
          else {
             goalWordCount[alphabet]--;
          }
-
+         int indexOfChar = remainingGoal.IndexOf(alphabet);
+         if (indexOfChar >= 0)
+         {
+           remainingGoal = remainingGoal.Substring(0, indexOfChar) + "  " + remainingGoal.Substring(indexOfChar + 1);
+         }
          if (goalWordCount.Count == 0) {
             SetGoal();
          }
