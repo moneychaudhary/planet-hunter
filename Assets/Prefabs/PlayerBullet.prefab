@@ -125,4 +125,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  goalScript: {fileID: 0}
+  goal: {fileID: 0}

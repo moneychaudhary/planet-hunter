@@ -6,10 +6,14 @@ using UnityEngine.UI;
 public class BulletScript : MonoBehaviour
 {	
     public float speed = 10f;
+    public GoalScript goalScript;
     // Start is called before the first frame update
+    void Awake() {
+        goalScript = GameObject.Find("Goal").GetComponent<GoalScript>();
+    }
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -23,6 +27,8 @@ public class BulletScript : MonoBehaviour
       if(collision.tag == "Alphabet") 
       {
         Destroy(gameObject);
+        Debug.Log(collision.gameObject.transform.name[0]);
+        goalScript.Shot(collision.gameObject.transform.name[0]);
       }
     }
 }
