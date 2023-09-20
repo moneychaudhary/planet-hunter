@@ -12,6 +12,7 @@ public class PlayerScript : MonoBehaviour
     float maxX;
     float minY;
     float maxY;
+    public GameController gameController;
 
     void Start()
     {
@@ -43,7 +44,7 @@ public class PlayerScript : MonoBehaviour
       if(collision.tag == "Alphabet")
       {
         Destroy(gameObject);
-        // Game Ends
+        gameController.GameOver();
       }
     }
 }
