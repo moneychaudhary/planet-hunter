@@ -29,7 +29,7 @@ public class SpawnerScript : MonoBehaviour
     void SpawnAlphabet() 
     {
       int randomValue = Random.Range(0, alphabets.Length);
-      int randomX = Random.Range(-3, 3);
+      int randomX = Random.Range(-6, 6);
       Instantiate(alphabets[randomValue], new Vector2(randomX, transform.position.y), Quaternion.identity);
     }
 }

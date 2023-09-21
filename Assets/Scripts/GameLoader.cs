@@ -20,9 +20,4 @@ public class GameLoader : MonoBehaviour
     public void Reload() {
         SceneManager.LoadScene("GamePlay");
     }
-
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
 }

@@ -26,9 +26,4 @@ public class GameController : MonoBehaviour
      public void GameCompleted() {
         gameCompletePanel.SetActive(true);
     }
-
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
 }
